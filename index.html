@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI Automation Agency · Abhishek Saini</title>
+  <meta name="description" content="An AI automation agency. We audit your processes, then build AI agents, WhatsApp automation and workflows that stop leads slipping and cut repetitive work.">
+
+  <!-- Link preview on LinkedIn, WhatsApp, X. After deploying, replace https://iamabhisheksaini.github.io with your real URL. -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="AI Automation Agency · Audit. Automate. Accelerate.">
+  <meta property="og:description" content="AI agents, WhatsApp automation and workflow systems, built for business outcomes rather than demos.">
+  <meta property="og:image" content="https://iamabhisheksaini.github.io/assets/og-image.png">
+  <meta property="og:url" content="https://iamabhisheksaini.github.io">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#0a0a0d">
+
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&family=Instrument+Serif:ital@1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="aurora" aria-hidden="true"><span></span><span></span><span></span></div>
+  <div class="bg-grid" aria-hidden="true"></div>
+  <div class="noise" aria-hidden="true"></div>
+  <div class="spot" id="spot" aria-hidden="true"></div>
+  <div class="progress" id="progress" aria-hidden="true"></div>
+
+  <header class="nav">
+    <div class="wrap nav-inner">
+      <a href="#top" class="brand">
+        <span class="mark">A<sup>3</sup></span>
+        <span class="brand-text"><strong data-bind="brand.name"></strong><small data-bind="brand.tagline"></small></span>
+      </a>
+      <nav class="nav-links">
+        <a href="#model">AAA model</a>
+        <a href="#services">Services</a>
+        <a href="#work">Work</a>
+        <a href="#testimonials">Clients</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#contact" class="btn btn-sm js-book">Book a call</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero wrap">
+      <div class="hero-copy reveal">
+        <p class="pill"><span class="pulse"></span><span data-bind="hero.eyebrow"></span></p>
+        <h1>
+          <span data-bind="hero.titleA"></span>
+          <em data-bind="hero.titleEm"></em>
+          <span class="rotator-line"><em class="rotator" id="rotator"></em></span>
+          <span data-bind="hero.titleB"></span>
+        </h1>
+        <p class="lede" data-bind="hero.intro"></p>
+        <div class="cta-row">
+          <a class="btn btn-glow js-book" href="#contact">Book a free discovery call <span aria-hidden="true">→</span></a>
+          <a class="btn btn-ghost" href="#work">See our work</a>
+        </div>
+      </div>
+
+      <!-- Chat mockup: what the WhatsApp agent does -->
+      <div class="stage reveal">
+      <div class="float f1" aria-hidden="true"><span class="f-ic ig">◎</span><span><strong>Post published</strong><small>Instagram · LinkedIn · X</small></span></div>
+      <div class="float f2" aria-hidden="true"><span class="f-ic ok">✓</span><span><strong>Policy check passed</strong><small>0 issues · ad approved</small></span></div>
+      <div class="float f3" aria-hidden="true"><span class="f-ic up">↗</span><span><strong>New lead · score 86</strong><small>follow-up scheduled</small></span></div>
+      <div class="phone" aria-label="Example: an AI agent capturing a lead on WhatsApp">
+        <div class="phone-top">
+          <span class="ava">AI</span>
+          <span><strong>Sales Copilot</strong><small>online · replies instantly</small></span>
+        </div>
+        <div class="chat" id="chat"></div>
+        <div class="toast" id="toast">
+          <span class="toast-ic">✓</span>
+          <span><strong>Lead added to CRM</strong><small>Acme Retail · score 86 · demo Wed 3pm</small></span>
+        </div>
+      </div>
+      </div>
+    </section>
+
+    <!-- TOOLKIT MARQUEE -->
+    <div class="tapes" aria-label="Platforms we connect">
+      <div class="tape tape-a"><div class="marquee-track" id="marquee"></div></div>
+      <div class="tape tape-b" aria-hidden="true"><div class="marquee-track rev" id="marquee2"></div></div>
+    </div>
+
+    <!-- STATS -->
+    <section class="wrap stats reveal" id="stats"></section>
+
+    <!-- AAA MODEL -->
+    <section class="light-band" id="model">
+      <div class="giant" aria-hidden="true">AAA</div>
+      <div class="wrap">
+        <div class="section-head reveal">
+          <p class="kicker">The AAA model</p>
+          <h2>Audit. Automate. <em>Accelerate.</em></h2>
+          <p class="muted">Most agencies sell chatbots. We sell a better-running business. Every engagement follows the same three phases.</p>
+        </div>
+        <div class="model" id="model-list"></div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="wrap section" id="services">
+      <div class="section-head reveal">
+        <p class="kicker">What we automate</p>
+        <h2>One AI system for your <em>whole business</em></h2>
+        <p class="muted">Marketing, sales, support and operations, connected and running on autopilot. You focus on growth; the system handles the repetitive work.</p>
+      </div>
+      <div class="bento" id="services-list"></div>
+    </section>
+
+    <!-- WORK -->
+    <section class="wrap section" id="work">
+      <div class="section-head reveal">
+        <p class="kicker">Case studies</p>
+        <h2>Transformations that <em>pay off</em></h2>
+        <p class="muted">Every project starts with a business problem and ends with a measurable change. Here's what that looks like.</p>
+      </div>
+      <div id="work-list"></div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="wrap section" id="testimonials">
+      <div class="section-head reveal">
+        <p class="kicker">Clients</p>
+        <h2>In their <em>words</em></h2>
+      </div>
+      <div id="testimonials-list" class="t-grid"></div>
+    </section>
+
+    <!-- PRICING -->
+    <section class="wrap section" id="pricing">
+      <div class="section-head reveal">
+        <p class="kicker">Pricing</p>
+        <h2>Clear pricing, <em>real</em> outcomes</h2>
+        <p class="muted">Start with the audit, or go straight to building. Every tier follows the AAA model.</p>
+      </div>
+      <div class="pricing" id="pricing-list"></div>
+      <p class="muted small center reveal">Prices in USD. Additional integrations and custom systems are quoted after the audit.</p>
+    </section>
+
+    <!-- FOUNDER + FAQ -->
+    <section class="wrap section split" id="about">
+      <div class="founder reveal">
+        <p class="kicker">Meet the founder</p>
+        <div class="founder-head">
+          <span class="founder-ava">AS</span>
+          <span><strong data-bind="brand.founder"></strong><small data-bind="brand.founderRole"></small></span>
+        </div>
+        <p data-bind="founder.bio"></p>
+        <ul class="creds" id="creds"></ul>
+        <a class="btn btn-ghost btn-sm js-book" href="#contact">Talk to Abhishek directly</a>
+      </div>
+      <div class="reveal">
+        <p class="kicker">Questions</p>
+        <div id="faq" class="faq"></div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="lime-block" id="contact">
+      <div class="lime-tape" aria-hidden="true"><div class="marquee-track" id="marquee3"></div></div>
+      <div class="wrap lime-inner reveal">
+        <p class="kicker">Start with a free call</p>
+        <h2>Find out where AI pays off in <em>your</em> business.</h2>
+        <div class="lime-row">
+          <p class="lede">A free 30-minute call. Tell us how leads and requests move through your team, and we'll show you honestly where automation would pay off and where it wouldn't.</p>
+          <div class="cta-row" id="contact-links"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer-wrap">
+    <div class="wrap footer">
+      <span>© <span id="year"></span> <span data-bind="brand.name"></span> · <span data-bind="brand.tagline"></span></span>
+      <span class="muted" data-bind="brand.location"></span>
+    </div>
+    <div class="wordmark" aria-hidden="true">Audit<span>·</span>Automate<span>·</span>Accelerate</div>
+  </footer>
+
+  <!-- BOOKING -->
+  <dialog id="booking" class="bk" aria-labelledby="bk-title">
+    <div class="bk-shell">
+      <aside class="bk-side">
+        <span class="mark">A<sup>3</sup></span>
+        <p class="kicker">Free discovery call</p>
+        <h2 id="bk-title">Let's find where AI <em>pays off</em> for you.</h2>
+        <ul class="bk-facts">
+          <li id="bk-len"></li>
+          <li id="bk-where"></li>
+          <li>With <span data-bind="brand.founder"></span> directly</li>
+        </ul>
+        <ol class="bk-steps" id="bk-steps">
+          <li data-s="1"><span>1</span>Pick a time</li>
+          <li data-s="2"><span>2</span>Your details</li>
+          <li data-s="3"><span>3</span>Confirmed</li>
+        </ol>
+      </aside>
+
+      <div class="bk-main">
+        <button type="button" class="bk-close" id="bk-close" aria-label="Close">×</button>
+        <p class="bk-mode" id="bk-mode" hidden></p>
+
+        <section class="bk-step" data-step="1">
+          <h3>Pick a day</h3>
+          <div class="bk-days" id="bk-days" role="listbox" aria-label="Available days"></div>
+          <h3 class="bk-h-time">Pick a time <small id="bk-tz"></small></h3>
+          <div class="bk-times" id="bk-times" role="listbox" aria-label="Available times"></div>
+          <p class="bk-status" id="bk-status" role="status"></p>
+        </section>
+
+        <section class="bk-step" data-step="2" hidden>
+          <div class="bk-chosen">
+            <span class="bk-chosen-ic" aria-hidden="true">◷</span>
+            <span id="bk-chosen"></span>
+            <button type="button" class="bk-link" id="bk-change">Change</button>
+          </div>
+          <form id="bk-form" novalidate>
+            <div class="bk-grid">
+              <label>Full name *<input name="name" required maxlength="100" autocomplete="name"></label>
+              <label>Work email *<input name="email" type="email" required maxlength="200" autocomplete="email"></label>
+              <label>WhatsApp / phone<input name="phone" type="tel" maxlength="40" autocomplete="tel" placeholder="+91 …"></label>
+              <label>Company *<input name="company" required maxlength="150" autocomplete="organization"></label>
+              <label>Website<input name="website" maxlength="200" placeholder="yourcompany.com"></label>
+              <label>Industry<select name="industry" id="bk-industry"><option value="">Select…</option></select></label>
+              <label>Team size<select name="teamSize" id="bk-team"><option value="">Select…</option></select></label>
+              <label>Package<select name="package" id="bk-package"><option value="Not sure yet">Not sure yet</option></select></label>
+            </div>
+            <fieldset class="bk-interests">
+              <legend>What would you like to automate?</legend>
+              <div id="bk-interests"></div>
+            </fieldset>
+            <label class="bk-full">What's slowing your business down? *
+              <textarea name="message" required maxlength="3000" rows="4" placeholder="e.g. We get 50+ WhatsApp enquiries a day and lose track of follow-ups…"></textarea>
+            </label>
+            <input class="bk-hp" name="company_site" tabindex="-1" autocomplete="off" aria-hidden="true">
+            <p class="bk-error" id="bk-error" role="alert"></p>
+            <button class="btn btn-glow bk-submit" type="submit" id="bk-submit">Confirm booking</button>
+            <p class="bk-privacy">Your details are used only to prepare for this call. You'll get a calendar invite by email.</p>
+          </form>
+        </section>
+
+        <section class="bk-step bk-done" data-step="3" hidden>
+          <span class="bk-tick" aria-hidden="true">✓</span>
+          <h3>You're booked!</h3>
+          <p class="bk-when" id="bk-when"></p>
+          <p class="muted" id="bk-done-note"></p>
+          <a class="btn btn-ghost" id="bk-meet" target="_blank" rel="noopener" hidden>Open Google Meet link</a>
+          <button type="button" class="btn btn-sm" id="bk-finish">Done</button>
+        </section>
+      </div>
+    </div>
+  </dialog>
+
+  <script src="content.js"></script>
+  <script src="main.js"></script>
+  <script src="booking.js"></script>
+</body>
+</html>
